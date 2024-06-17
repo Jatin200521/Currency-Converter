@@ -1,82 +1,88 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f4e4ba;
+  background-color: #18ffff;
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
 }
 
-.container {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  min-height: 45vh;
-  width: 40vh;
+.heading {
+  font-family: "Pacifico", cursive;
+
+  margin: 35px auto 20px;
 }
 
-form {
-  margin: 2rem 0 1rem 0;
+hr {
+  border-top: 2px solid black;
+
+  width: 40%;
+
+  margin-bottom: 55px;
 }
 
-form select,
-button,
-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 0.75rem;
+.main {
+  width: 50vw;
+
+  margin: auto;
+
+  padding: 30px;
+
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: white;
 }
 
-form input {
-  border: 1px solid lightgray;
-  font-size: 1rem;
-  height: 3rem;
-  padding-left: 0.5rem;
+label {
+  font-size: 20px;
 }
 
-.dropdown {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
+.btn {
+  width: 200px;
 }
 
-.dropdown i {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+#finalAmount {
+  font-family: "Lobster", cursive;
+
+  display: none;
+
+  margin: 50px auto;
 }
 
-.select-container img {
-  max-width: 2rem;
+#finalAmount h2 {
+  font-size: 50px;
 }
 
-.select-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 6rem;
-  border-radius: 0.5rem;
-  border: 1px solid lightgray;
+.finalValue {
+  font-family: "Amiri", serif;
 }
 
-.select-container select {
-  font-size: 1rem;
-  width: auto;
+@media (max-width: 768px) {
+  hr {
+    width: 60%;
+  }
+
+  .main {
+    width: 100%;
+  }
 }
 
-.msg {
-  margin: 2rem 0 2rem 0;
-}
+@media (max-width: 400px) {
+  .heading {
+    font-size: 60px;
+  }
 
-form button {
-  height: 3rem;
-  background-color: #af4d98;
-  color: #fff;
-  font-size: 1.15rem;
-  cursor: pointer;
+  hr {
+    width: 75%;
+  }
+
+  #finalAmount h2,
+  .finalValue {
+    font-size: 40px;
+  }
 }
